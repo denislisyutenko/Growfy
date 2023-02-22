@@ -25,6 +25,9 @@ body {
   flex: 1 1 auto;
 }
 
+.page__clients {
+}
+
 .page__main {
 
 }
@@ -447,7 +450,54 @@ body {
     align-self: stretch;
   }
 }
+/* --------------------- */
+/* clients */
+/* --------------------- */
 
+.clients {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.clients__container {
+}
+.clients__title {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 1.57; /* 22/14 */
+  margin-bottom: 44px;
+}
+.clients__items {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.client__item {
+  max-width: 100%;
+}
+
+@media (max-width: 991.98) {
+  .clients {
+    padding-top: 570px;
+    padding-bottom: 50px;
+  }
+  .clients__title {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98) {
+  .clients {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .clients__title {
+    padding-bottom: 20px;
+  }
+}
 
 
 
