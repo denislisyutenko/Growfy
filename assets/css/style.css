@@ -36,6 +36,8 @@ body {
 
 .page__blog {}
 
+.page__start-start {}
+
 .button {
   display: inline-block;
   text-align: center;
@@ -978,13 +980,13 @@ testimonials section
 }
 
 /* --------------------- */
-/* advantages section */
+/* blog section */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 
 
 .blog {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 .blog__container {
 }
@@ -1095,7 +1097,7 @@ testimonials section
 @media (max-width: 991.98px) {
   .blog {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   .blog__header {
     margin-bottom: 44px;
@@ -1105,13 +1107,76 @@ testimonials section
 @media (max-width: 767.98px) {
   .blog {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .blog__items {
     grid-template-columns: auto;
   }
   .blog__header {
     margin-bottom: 25px;
+  }
+}
+
+/* --------------------- */
+/* start section */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.start__container {
+}
+
+.start__body {
+  display: flex;
+  background: rgba(129, 129, 139, 0.1);
+  border-radius: 30px;
+  align-items: center;
+  padding: 52px 40px;
+}
+
+.start__column {
+  flex: 0 1 50%;
+  text-align: center;
+}
+.start__title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.28; /* 45/35 */
+}
+
+.start__title:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.start__text {
+  max-width: 340px;
+  display: inline-block;
+}
+.start__actions {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 20px;
+  justify-content: center;
+}
+.start__button {
+}
+
+@media (max-width: 991.98px) {
+  .start__body {
+    align-items: stretch;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .start__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .start__actions {
+    flex-direction: column;
   }
 }
 
